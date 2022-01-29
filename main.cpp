@@ -1,7 +1,9 @@
 #include <iostream>
 
-int main(int argv, char** argc){
+int main(int argc, char** argv){
+	
+	std::cout << (int)argv[1] + (int)argv[2];
 
-	std::cout << argv << " " << argc[1] << "\n";
+	return 0;
 
 }
