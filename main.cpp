@@ -1,9 +1,13 @@
 #include <iostream>
-#include "lib/init.hpp"
+#include "lib.h"
 
 int main(int argc, char** argv){
 	
-	cout << parseInt(argv[1]) + parseInt(argv[2]);
+	if (argc <= 3){
+		std::cout << "you need 3 or more parameters to start\n";
+		return 0;
+	}
+
 
 	return 0;
 
