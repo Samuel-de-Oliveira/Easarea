@@ -1,8 +1,9 @@
 #include <iostream>
+#include "lib/init.hpp"
 
 int main(int argc, char** argv){
 	
-	std::cout << (int)argv[1] + (int)argv[2];
+	cout << parseInt(argv[1]) + parseInt(argv[2]);
 
 	return 0;
 
