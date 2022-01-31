@@ -1,6 +1,9 @@
 #include <sstream>
 using namespace std;
 
+// I don't have created this codes I found it in StackOverflow page
+// You are free to copy this :P
+
 int parseInt(const string &str) {
 
 	stringstream ss(str);
