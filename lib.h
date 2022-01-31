@@ -1,7 +1,7 @@
 #include <sstream>
 using namespace std;
 
-// I don't have created this codes I found it in StackOverflow page
+// I don't have created this codes I found it in a GeekForGeeks page, I'm don't have created this by myself
 // You are free to copy this :P
 
 const float Pi = 3.1415926535897; // I conseidered this value for π
