@@ -7,7 +7,10 @@ int main(int argc, char** argv){
 	
 	string check(argv[1]);
 			
-	if (check == "help"){ std::cout << "_*_ List of comands _*_\n" <<
+	if (check == "help"){ std::cout << "To use you need to follow this format:\n"
+					   "\teasarea [command] values ...\n"
+					   "\n"
+					   "_*_ List of comands _*_\n"
        			                   "\n"
 					   "square: Calculate the area of a square (b x h)\n"
 					   "triangle: Calculate the area of a tringle ((b x h) / 2)\n"

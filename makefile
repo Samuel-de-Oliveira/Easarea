@@ -9,5 +9,5 @@ all: main.cpp
 install: main.cpp
 	echo "The installing starts!"
 	$(CXX) $(FILE) -o $(TARGET)
-	mv $(TARGET) /usr/bin/
+	mv -f $(TARGET) /usr/bin/
 	echo "Thanks for use my software ;)"

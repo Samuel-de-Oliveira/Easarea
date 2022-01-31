@@ -18,4 +18,20 @@ but if you want to compile only you can write:
 For while don't have a Windows version of installer, you can compile
 and install for yourself in this case.
 
+How to use?
+
+This software only work by commands, so if want to do something the
+comandas works similar of this:
+
+	easarea [command] values ...
+
+for example to calculate the area of a triangle with a base of 10 and
+a heigth of 35 you need to digit this command:
+
+	easarea triangle 10 35
+
+the output will be this a simple `175`
+
+for more command you can write `easarea help` in the terminal
+
 #### Created by: *Samuel de Oliveira* 2022
