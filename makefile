@@ -11,3 +11,7 @@ install: main.cpp
 	$(CXX) $(FILE) -o $(TARGET)
 	mv -f $(TARGET) /usr/bin/
 	echo "Thanks for use my software ;)"
+
+uninstall: main.cpp
+	echo "Removing software"
+	rm -f /usr/bin/easarea
