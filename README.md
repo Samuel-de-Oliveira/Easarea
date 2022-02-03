@@ -5,7 +5,7 @@ a super profetional program to use to do perfect things, but you can
 install it if you want to test. For while this software is on a BETA
 version
 
-### Okay but... How I can install it?
+## Okay but... How I can install it?
 
 If you use Linux or MacOS you can use this command:
 
@@ -13,12 +13,16 @@ If you use Linux or MacOS you can use this command:
 
 but if you want to compile only you can write:
 
-	make
+	make all
+
+To uninstall the software you can write this:
+
+	make uninstall
 
 For while don't have a Windows version of installer, you can compile
 and install for yourself in this case.
 
-How to use?
+## How to use?
 
 This software only work by commands, so if want to do something the
 comandas works similar of this:
