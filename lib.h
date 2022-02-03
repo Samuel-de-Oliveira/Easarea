@@ -1,10 +1,8 @@
 #include <sstream>
 using namespace std;
 
-// I don't have created this codes I found it in a GeekForGeeks page, I'm don't have created this by myself
-// You are free to copy this :P
-
 const float Pi = 3.1415926535897; // I conseidered this value for π
+const string Version = "0.1 Beta.";
 
 int parseInt(const string &str) {
 
@@ -21,5 +19,12 @@ float parseFloat(const string &str) {
 	float num;
 	ss >> num;
 	return num;
+
+}
+
+float circleParts(float angle) {
+	
+	if (angle > 360){ return 1; }
+	else { return 360 / angle; }
 
 }
