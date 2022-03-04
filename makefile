@@ -15,3 +15,6 @@ install: main.cpp
 uninstall: main.cpp
 	echo "Removing software"
 	rm -f /usr/bin/easarea
+
+clean:
+	rm -f $(TARGET)
