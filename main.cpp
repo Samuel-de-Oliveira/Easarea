@@ -30,10 +30,10 @@ int main(int argc, char** argv){
 	if (check == "triangle" || check == "diamond"){ std::cout << (parseFloat(argv[2]) * parseFloat(argv[3])) / 2 << "\n"; }
 	if (check == "circle"){ std::cout << Pi * pow(parseFloat(argv[2]), 2) << "\n"; }
 	if (check == "trapezium"){ std::cout << (parseFloat(argv[2]) + parseFloat(argv[3])) * parseFloat(argv[4]) / 2 << "\n"; }
-	if (check == "hypotenuse"){ std::cout << hypot(parseFloat(argv[2]), parseFloat(argv[3])) << "\n" }
+	if (check == "hypotenuse"){ std::cout << hypot(parseFloat(argv[2]), parseFloat(argv[3])) << "\n"; }
 
-	if (check == "version"){ std::cout << "Version: "<< Version << "\n";
-					      "Program created by: Samuel de Oliveira\n"}
+	if (check == "version"){ std::cout << "Version: "<< Version << "\n"
+					      "Program created by: Samuel de Oliveira\n"; }
 
 	return 0;
 }
