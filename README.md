@@ -5,9 +5,15 @@ a super profetional program to use to do perfect things, but you can
 install it if you want to test. For while this software is on a BETA
 version
 
+I made this program to learn more about Github, Makefile, C++
+
 ## Okay but... How I can install it?
 
-If you use Linux or MacOS you can use this command:
+You can download the latest version with this [Link](https://github.com/Samuel-de-Oliveira/Easarea/releases/tag/v0.1)
+and chosing you system's version.
+
+But if you don't want to download something you can clone this repository
+and run the follow command:
 
 	sudo make install
 
