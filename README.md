@@ -1,11 +1,11 @@
-# Easarea - A area cacalator software
+# Easarea - A software to calculate area
 
 This is a software created for learning pruposes, thats mean it's not
 a super professional program to use to do perfect things, but you can
 install it if you want to test it. For while this software is on a BETA
 version.
 
-I made this program to learn more about Github, Makefile, C++.
+I made this program to learn more about Git, Github, Makefile and C++.
 
 ## Okay but... How I can install it?
 
