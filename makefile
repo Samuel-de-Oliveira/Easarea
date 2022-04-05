@@ -9,14 +9,14 @@ all: main.cpp
 
 .PHONY: install
 install: main.cpp
-	echo "The installing starts!"
+	@echo "The installing starts!"
 	$(CXX) $(FILE) -o $(TARGET)
 	mv -f $(TARGET) /usr/bin/
-	echo "Thanks for use my software ;)"
+	@echo "Thanks for use my software ;)"
 
 .PHONY: uninstall
 uninstall: main.cpp
-	echo "Removing software"
+	@echo "Removing software"
 	rm -f /usr/bin/easarea
 
 .PHONY: clean
