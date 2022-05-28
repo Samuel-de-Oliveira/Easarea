@@ -33,10 +33,10 @@ float parseFloat(const string &str) {
 
 float circleParts(float angle) {
 	
-	if (angle > 360){ 
-		cout << "The angle can't be a value higher than 360.\nPlease, digit a valid value.\n";
+	if (angle > 360) { 
+		cout << "The angle can't be a value higher than 360.";
 		return 0;
 	}
-	else { return 360 / angle; }
+	else return 360 / angle;
 
 }
