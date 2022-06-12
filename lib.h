@@ -8,6 +8,7 @@
  */
 
 #include <sstream>
+#include <string>
 using namespace std;
 
 const float Pi = 3.1415926535897; // I conseidered this value for π
