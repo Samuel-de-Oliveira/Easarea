@@ -2,18 +2,18 @@ TARGET = easarea
 CXX    = /usr/bin/g++
 FILE   = main.cpp
 
-all: main.cpp
+all:
 	$(CXX) $(FILE) -o $(TARGET)
 
-install: main.cpp
+install:
 	@echo "The installing starts!"
 	$(CXX) $(FILE) -o $(TARGET)
 	mv -f $(TARGET) /usr/bin/
 	@echo "Thanks for use my software ;)"
 
-uninstall: main.cpp
+uninstall:
 	@echo "Removing software"
-	rm -f /usr/bin/easarea
+	rm /usr/bin/easarea
 
 clean:
-	rm -f $(TARGET)
+	rm $(TARGET)
