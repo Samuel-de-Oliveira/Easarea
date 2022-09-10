@@ -15,12 +15,12 @@
 #include <string>
 #include <cmath>
 
-int main(int argc, char** argv){
+int main(int argc, char** argv) {
 	
-	string check(argv[1]);
+	std::string check(argv[1]); // Check the first argument before the program.
 	
 	// Help message
-	if (check == "help"){
+	if (check == "help") {
 		std::cout <<
 		"To use you need to follow this format:\n"
 		"\teasarea [command] values...\n"
@@ -39,18 +39,19 @@ int main(int argc, char** argv){
 		"parallelepiped: Calculate the valume of a parallelepiped (b * h * w) [easarea parallelepiped [\"b\" value here] [\"h\" value here] [\"w\" value here]]\n"
 
 		"version: Show the version of program [easarea version]\n"
-		"help: Show this message [easarea help]\n";}
+		"help: Show this message [easarea help]\n";
+	}
 
 	// shape calculators
-	if (check == "rectangle") std::cout << parseFloat(argv[2]) * parseFloat(argv[3]) << "\n";
-	if (check == "square") std::cout << pow(parseFloat(argv[2]), 2) << "\n";
-	if (check == "triangle" || check == "diamond") std::cout << (parseFloat(argv[2]) * parseFloat(argv[3])) / 2 << "\n";
-	if (check == "circle") std::cout << Pi * pow(parseFloat(argv[2]), 2) << "\n";
-	if (check == "trapezium") std::cout << (parseFloat(argv[2]) + parseFloat(argv[3])) * parseFloat(argv[4]) / 2 << "\n";
-	if (check == "hypotenuse") std::cout << hypot(parseFloat(argv[2]), parseFloat(argv[3])) << "\n";
-	if (check == "regular_polygon") std::cout << (parseFloat(argv[2]) * parseFloat(argv[3])) / 2 << "\n";
-	if (check == "cube") std::cout << pow(parseFloat(argv[2]), 3) << "\n";
-	if (check == "parallelepiped") std::cout << parseFloat(argv[2]) * parseFloat(argv[3]) * parseFloat(argv[4]) << "\n";
+	if (check == "rectangle") std::cout << parseFloat(argv[2]) * parseFloat(argv[3]) << '\n';
+	if (check == "square") std::cout << pow(parseFloat(argv[2]), 2) << '\n';
+	if (check == "triangle" || check == "diamond") std::cout << (parseFloat(argv[2]) * parseFloat(argv[3])) / 2 << '\n';
+	if (check == "circle") std::cout << Pi * pow(parseFloat(argv[2]), 2) << '\n';
+	if (check == "trapezium") std::cout << (parseFloat(argv[2]) + parseFloat(argv[3])) * parseFloat(argv[4]) / 2 << '\n';
+	if (check == "hypotenuse") std::cout << hypot(parseFloat(argv[2]), parseFloat(argv[3])) << '\n';
+	if (check == "regular_polygon") std::cout << (parseFloat(argv[2]) * parseFloat(argv[3])) / 2 << '\n';
+	if (check == "cube") std::cout << pow(parseFloat(argv[2]), 3) << '\n';
+	if (check == "parallelepiped") std::cout << parseFloat(argv[2]) * parseFloat(argv[3]) * parseFloat(argv[4]) << '\n';
 
 	// Version
 	if (check == "version") std::cout << "Version: " << Version << "\nProgram created by: Samuel de Oliveira\n";

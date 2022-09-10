@@ -8,7 +8,7 @@ all:
 install:
 	@echo "The installing starts!"
 	$(CXX) $(FILE) -o $(TARGET)
-	mv -f $(TARGET) /usr/bin/
+	mv $(TARGET) /usr/bin/
 	@echo "Thanks for use my software ;)"
 
 uninstall:

@@ -9,23 +9,22 @@
 
 #include <sstream>
 #include <string>
-using namespace std;
 
-const float Pi = 3.1415926535897; // I conseidered this value for π
-const string Version = "0.1.1 Beta."; // Version's number
+const float Pi            {3.1415926535897}; // I conseidered this value for π
+const std::string Version {"0.1.1 Beta."}; // Version's number
 
-int parseInt(const string &str) {
+int parseInt(const std::string &str) {
 
-	stringstream ss(str);
+	std::stringstream ss(str);
 	int num;
 	ss >> num;
 	return num;
 
 }
 
-float parseFloat(const string &str) {
+float parseFloat(const std::string &str) {
 
-	stringstream ss(str);
+	std::stringstream ss(str);
 	float num;
 	ss >> num;
 	return num;
@@ -35,7 +34,7 @@ float parseFloat(const string &str) {
 float circleParts(float angle) {
 	
 	if (angle > 360) { 
-		cout << "The angle can't be a value higher than 360.";
+		std::cout << "The angle can't be a value higher than 360.\n";
 		return 0;
 	}
 	else return 360 / angle;
