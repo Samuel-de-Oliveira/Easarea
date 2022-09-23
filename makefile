@@ -6,7 +6,7 @@ all:
 	$(CXX) $(FILE) -o $(TARGET)
 
 install:
-	$(CXX) $(FILE) -o $(TARGET)
+	$(MAKE)
 	mv $(TARGET) /usr/bin/
 
 uninstall:

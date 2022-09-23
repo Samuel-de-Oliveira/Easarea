@@ -17,7 +17,7 @@
 
 int main(int argc, char** argv) {
 	
-	std::string check(argv[1]); // Check the first argument before the program.
+	const std::string check(argv[1]); // Check the first argument before the program.
 	
 	// Help message
 	if (check == "help") {
