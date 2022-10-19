@@ -10,7 +10,7 @@
 #include <sstream>
 
 const float Pi         {3.1415926535897}; // I conseidered this value for π.
-const char Version[12] {"0.1.1 Beta."}; // Version's number.
+const char Version[4] {"1.0"}; // Version's number.
 
 int parseInt(const std::string &str) {
 

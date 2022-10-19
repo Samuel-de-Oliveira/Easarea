@@ -12,7 +12,7 @@
 
 // Import Area
 #include <iostream>
-#include "lib.h"
+#include "lib.hpp"
 #include <string>
 #include <cmath>
 
