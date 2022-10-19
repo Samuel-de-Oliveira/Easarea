@@ -53,19 +53,20 @@ int main(int argc, char** argv) {
 		if (check == "help") helpMessage();
 
 		// shape calculators
-		if (check == "rectangle") std::cout << parseFloat(argv[2]) * parseFloat(argv[3]) << '\n';
-		if (check == "square") std::cout << pow(parseFloat(argv[2]), 2) << '\n';
-		if (check == "triangle" || check == "diamond") std::cout << (parseFloat(argv[2]) * parseFloat(argv[3])) / 2 << '\n';
-		if (check == "circle") std::cout << Pi * pow(parseFloat(argv[2]), 2) << '\n';
-		if (check == "trapezium") std::cout << (parseFloat(argv[2]) + parseFloat(argv[3])) * parseFloat(argv[4]) / 2 << '\n';
-		if (check == "hypotenuse") std::cout << hypot(parseFloat(argv[2]), parseFloat(argv[3])) << '\n';
-		if (check == "regular_polygon") std::cout << (parseFloat(argv[2]) * parseFloat(argv[3])) / 2 << '\n';
-		if (check == "cube") std::cout << pow(parseFloat(argv[2]), 3) << '\n';
-		if (check == "parallelepiped") std::cout << parseFloat(argv[2]) * parseFloat(argv[3]) * parseFloat(argv[4]) << '\n';
+		else if (check == "rectangle") std::cout << parseFloat(argv[2]) * parseFloat(argv[3]) << '\n';
+		else if (check == "square") std::cout << pow(parseFloat(argv[2]), 2) << '\n';
+		else if (check == "triangle" || check == "diamond") std::cout << (parseFloat(argv[2]) * parseFloat(argv[3])) / 2 << '\n';
+		else if (check == "circle") std::cout << Pi * pow(parseFloat(argv[2]), 2) << '\n';
+		else if (check == "trapezium") std::cout << (parseFloat(argv[2]) + parseFloat(argv[3])) * parseFloat(argv[4]) / 2 << '\n';
+		else if (check == "hypotenuse") std::cout << hypot(parseFloat(argv[2]), parseFloat(argv[3])) << '\n';
+		else if (check == "regular_polygon") std::cout << (parseFloat(argv[2]) * parseFloat(argv[3])) / 2 << '\n';
+		else if (check == "cube") std::cout << pow(parseFloat(argv[2]), 3) << '\n';
+		else if (check == "parallelepiped") std::cout << parseFloat(argv[2]) * parseFloat(argv[3]) * parseFloat(argv[4]) << '\n';
 
 		// Version
-		if (check == "version") std::cout << "Version: " << Version << "\nProgram created by: Samuel de Oliveira\n";
+		else if (check == "version") std::cout << "Version: " << Version << "\nProgram created by: Samuel de Oliveira\n";
 	
+		else std::cout << "You digit a invalid argument! Digit 'easarea help' for more info.\n";
 	}
 
 	return 0;
