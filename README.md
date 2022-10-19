@@ -23,7 +23,7 @@ Also, if you only want to compile, you can write:
 
 To uninstall the software you can write this:
 
-	make uninstall
+	sudo make uninstall
 
 For while don't have a Windows version of installer, you can compile
 and install for yourself in this case.
