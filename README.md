@@ -5,7 +5,7 @@ a super professional program to use to do perfect things, but you can
 install it if you want to test it.
 
 I made this program to learn more about Git, Github, Makefile and C++.
-Anyway I'm accept pullrequest or issues from this repository.
+Anyway I'm accepting pull requests or issues from this repository.
 
 ## Okay but... How I can install it?
 
