@@ -38,6 +38,7 @@ int main( int argc, char** argv ) {
 		else if (check == "regular_polygon") std::cout << (parseFloat(argv[2]) * parseFloat(argv[3])) / 2 << '\n';
 		else if (check == "cube") std::cout << pow(parseFloat(argv[2]), 3) << '\n';
 		else if (check == "parallelepiped") std::cout << parseFloat(argv[2]) * parseFloat(argv[3]) * parseFloat(argv[4]) << '\n';
+		else if (check == "semicircle") std::cout << (pow(parseFloat(argv[2]), 2) * Pi) / circleParts(parseFloat(argv[3])) << '\n';
 
 		// Version
 		else if (check == "version") std::cout << "Version: " << Version << "\nProgram created by: Samuel de Oliveira\n";

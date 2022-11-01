@@ -13,6 +13,7 @@
 const float Pi        {3.1415926535897}; // I conseidered this value for π.
 const char Version[4] {"1.0"}; // Version's number.
 
+// Help message
 void helpMessage() {
 
 std::cout <<
@@ -37,6 +38,7 @@ std::cout <<
 
 }
 
+// Parse interger
 int parseInt( const std::string &str ) {
 
 	std::stringstream ss(str);
@@ -46,6 +48,7 @@ int parseInt( const std::string &str ) {
 
 }
 
+// Parse Float
 float parseFloat( const std::string &str ) {
 
 	std::stringstream ss(str);
@@ -55,6 +58,7 @@ float parseFloat( const std::string &str ) {
 
 }
 
+// Calculate the parts of a circle with the angle.
 float circleParts( const float angle ) {
 
 	if (angle > 360) {
