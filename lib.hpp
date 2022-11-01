@@ -32,6 +32,7 @@ std::cout <<
 "regular_polygon: Calculate the area of a regular polygon ((P * A) / 2) [easarea regular_polygon [\"P\" value here] [\"A value here\"]]\n"
 "cube: Calculate the volume of a cube (s³) [easarea cube [\"s\" value here]]\n"
 "parallelepiped: Calculate the valume of a parallelepiped (b * h * w) [easarea parallelepiped [\"b\" value here] [\"h\" value here] [\"w\" value here]]\n"
+"semicircle: Calculate the area of a semicircle ((r² * π) / (360 / angle)) [ easarea semicircle [\"r\" value]] [\"angle\" value]]\n"
 
 "version: Show the version of program [easarea version]\n"
 "help: Show this message [easarea help]\n\n";
