@@ -8,12 +8,8 @@ I made this program to learn more about Git, Github, Makefile and C++.
 Anyway I'm accepting pull requests or issues from this repository.
 
 ## Okay but... How I can install it?
-
-You can download the latest version with this [Link](https://github.com/Samuel-de-Oliveira/Easarea/releases/tag/v0.1)
-and chosing you system's version.
-
-But if you don't want to download something you can clone this repository
-and run the follow command:
+The software only can be compiled by source, then to install the program
+you should type (For unix like systems):
 
 	sudo make install
 
