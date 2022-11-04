@@ -62,10 +62,12 @@ float parseFloat( const std::string &str ) {
 // Calculate the parts of a circle with the angle.
 float circleParts( const float angle ) {
 
-	if (angle > 360) {
+	if ( angle > 360 ) {
 		std::cout << "The angle can't be a value higher than 360º.\n";
 		return 0;
-	}
-	else return 360 / angle;
+	} else if ( angle <= 0 ) {
+		std::cout << "The angle can't be a value lower or equal than 0º.\n";
+		return 0;
+	} else return 360 / angle;
 
 }
