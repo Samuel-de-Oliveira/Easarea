@@ -10,7 +10,7 @@
 #include <iostream>
 #include <sstream>
 
-const float Pi        {3.1415926535897}; // I conseidered this value for π.
+const float Pi         {3.1415926535897}; // I conseidered this value for π.
 const char Version[10] {"1.0.1"}; // Version's number.
 
 // Help message
