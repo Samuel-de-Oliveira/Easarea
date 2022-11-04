@@ -7,7 +7,7 @@
  *
  *  Crated by: Samuel de Oliveira (Samuel-de-Oliviera)
  *  Code contribuitors: None
- *  Version: 1.0
+ *  Version: 1.0.1
  *
  */
 
