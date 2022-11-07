@@ -1,16 +1,19 @@
-TARGET = easarea
-CXX    = /usr/bin/g++
-FILE   = main.cpp
+TARGET      = easarea
+CXX         = /usr/bin/g++
+FILE        = main.cpp
+INSTALL_DIR = /usr/bin/
+
+.PHONY: all install uninstall clean
 
 all:
 	$(CXX) $(FILE) -o $(TARGET)
 
 install:
 	$(MAKE)
-	mv $(TARGET) /usr/bin/
+	mv $(TARGET) $(INSTALL_DIR)
 
 uninstall:
-	rm /usr/bin/easarea
+	rm $(INSTALL_DIR)/$(TARGET)
 
 clean:
 	rm $(TARGET)
