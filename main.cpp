@@ -51,15 +51,15 @@ int main( int argc, char** argv ) {
 			std::cout << "You digit a invalid argument! Digit 'easarea help' for more info.\n";
 			return 0;
 		}
+		
+		if (calculateValue <= 0) {
+			std::cout << "\033[31;1mWarning\033[m: The area or volume of a shape should be a positive rational number!\n" << "Or else it's will be illogical mathematically.\n\n";
+		}
+
+		std::cout << calculateValue << '\n';
+
 	}
 
-	if (calculateValue <= 0) {
-		std::cout << "\033[31;1mWarning\033[m: The area or volume of a shape should be a positive rational number!\n" <<
-			     "Or else it's will be illogical mathematically.\n\n";
-
-	}
-
-	std::cout << calculateValue << '\n';
 	return 0;
 
 }
