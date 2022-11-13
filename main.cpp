@@ -7,7 +7,7 @@
  *
  *  Crated by: Samuel de Oliveira (Samuel-de-Oliviera)
  *  Code contribuitors: None
- *  Version: 1.0.1
+ *  Version: 1.1
  *
  */
 
@@ -17,35 +17,49 @@
 #include <string>
 #include <cmath>
 
+float calculateValue;
+
 int main( int argc, char** argv ) {
 	
 	// if digit only program name, it shows the help message.
 	if (argc == 1) helpMessage();
 	else {
-
+		
 		const std::string check(argv[1]); // Check the first argument before the program.
-
 		// Help message
 		if (check == "help") helpMessage();
 
 		// shape calculators
-		else if (check == "rectangle") std::cout << parseFloat(argv[2]) * parseFloat(argv[3]) << '\n';
-		else if (check == "square") std::cout << pow(parseFloat(argv[2]), 2) << '\n';
-		else if (check == "triangle" || check == "diamond") std::cout << (parseFloat(argv[2]) * parseFloat(argv[3])) / 2 << '\n';
-		else if (check == "circle") std::cout << Pi * pow(parseFloat(argv[2]), 2) << '\n';
-		else if (check == "trapezium") std::cout << (parseFloat(argv[2]) + parseFloat(argv[3])) * parseFloat(argv[4]) / 2 << '\n';
-		else if (check == "hypotenuse") std::cout << hypot(parseFloat(argv[2]), parseFloat(argv[3])) << '\n';
-		else if (check == "regular_polygon") std::cout << (parseFloat(argv[2]) * parseFloat(argv[3])) / 2 << '\n';
-		else if (check == "cube") std::cout << pow(parseFloat(argv[2]), 3) << '\n';
-		else if (check == "parallelepiped") std::cout << parseFloat(argv[2]) * parseFloat(argv[3]) * parseFloat(argv[4]) << '\n';
-		else if (check == "semicircle") std::cout << (pow(parseFloat(argv[2]), 2) * Pi) / circleParts(parseFloat(argv[3])) << '\n';
+		else if (check == "rectangle") calculateValue = parseFloat(argv[2]) * parseFloat(argv[3]);
+		else if (check == "square") calculateValue = pow(parseFloat(argv[2]), 2);
+		else if (check == "triangle" || check == "diamond") calculateValue = (parseFloat(argv[2]) * parseFloat(argv[3])) / 2;
+		else if (check == "circle") calculateValue = Pi * pow(parseFloat(argv[2]), 2);
+		else if (check == "trapezium") calculateValue = (parseFloat(argv[2]) + parseFloat(argv[3])) * parseFloat(argv[4]) / 2;
+		else if (check == "hypotenuse") calculateValue = hypot(parseFloat(argv[2]), parseFloat(argv[3]));
+		else if (check == "regular_polygon") calculateValue = (parseFloat(argv[2]) * parseFloat(argv[3])) / 2;
+		else if (check == "cube") calculateValue = pow(parseFloat(argv[2]), 3);
+		else if (check == "parallelepiped") calculateValue = parseFloat(argv[2]) * parseFloat(argv[3]) * parseFloat(argv[4]);
+		else if (check == "semicircle") calculateValue = (pow(parseFloat(argv[2]), 2) * Pi) / circleParts(parseFloat(argv[3]));
 
-		// Version
-		else if (check == "version") std::cout << "Version: " << Version << "\nProgram created by: Samuel de Oliveira\n";
-	
-		else std::cout << "You digit a invalid argument! Digit 'easarea help' for more info.\n";
+		// Show version and exit
+		else if (check == "version") {
+			std::cout << "Version: " << Version << "\nProgram created by: Samuel de Oliveira\n";
+			return 0;
+		}
+		// If the command doesn't exist
+		else { 
+			std::cout << "You digit a invalid argument! Digit 'easarea help' for more info.\n";
+			return 0;
+		}
 	}
 
+	if (calculateValue <= 0) {
+		std::cout << "\033[31;1mWarning\033[m: The area or volume of a shape should be a positive rational number!\n" <<
+			     "Or else it's will be illogical mathematically.\n\n";
+
+	}
+
+	std::cout << calculateValue << '\n';
 	return 0;
 
 }
