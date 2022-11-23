@@ -19,7 +19,7 @@
 
 float calculateValue;
 
-int main( int argc, char** argv ) {
+int main( int argc, char* argv[] ) {
 	
 	// if digit only program name, it shows the help message.
 	if (argc == 1) helpMessage();
@@ -27,7 +27,11 @@ int main( int argc, char** argv ) {
 		
 		const std::string check(argv[1]); // Check the first argument before the program.
 		// Help message
-		if (check == "help") helpMessage();
+		if (check == "help") {
+			helpMessage();
+			return 0;
+		}
+
 
 		// shape calculators
 		else if (check == "rectangle") calculateValue = parseFloat(argv[2]) * parseFloat(argv[3]);
@@ -51,15 +55,20 @@ int main( int argc, char** argv ) {
 			std::cout << "You digit a invalid argument! Digit 'easarea help' for more info.\n";
 			return 0;
 		}
-		
-		if (calculateValue <= 0) {
-			std::cout << "\033[31;1mWarning\033[m: The area or volume of a shape should be a positive rational number!\n" << "Or else it's will be illogical mathematically.\n\n";
-		}
 
+
+		// Show the value you've got.
+		if (calculateValue < 0) {
+			// In casse of the value is negative show this message.
+			std::cout << "\033[31;1mWarning\033[m: The area or volume of a shape should "
+				     "be a positive rational number!\n"
+				     "Or else it's will be illogical mathematically.\n"
+				     "\nAnyways here are your value: ";
+		}
 		std::cout << calculateValue << '\n';
 
 	}
-
+	
 	return 0;
 
 }
