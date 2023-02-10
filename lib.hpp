@@ -11,7 +11,7 @@
 #include <sstream>
 
 const float Pi         {3.1415926535897}; // I conseidered this value for π.
-const char Version[10] {"1.1"}; // Version's number.
+const char Version[10] {"1.1.1"}; // Version's number.
 
 // Help message
 void helpMessage() {
@@ -36,7 +36,6 @@ std::cout <<
 
 "version: Show the version of program [easarea version]\n\n"
 "help: Show this message [easarea help]\n\n";
-
 }
 
 // Parse interger
@@ -68,6 +67,7 @@ float circleParts( const float angle ) {
 	} else if ( angle <= 0 ) {
 		std::cout << "The angle can't be a value lower or equal than 0º.\n";
 		return 0;
-	} else return 360 / angle;
-
+	} else {
+		return 360 / angle;
+	}
 }

@@ -50,6 +50,7 @@ int main( int argc, char* argv[] ) {
 			std::cout << "Version: " << Version << "\nProgram created by: Samuel de Oliveira\n";
 			return 0;
 		}
+
 		// If the command doesn't exist
 		else { 
 			std::cout << "You digit a invalid argument! Digit 'easarea help' for more info.\n";
