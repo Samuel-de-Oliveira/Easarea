@@ -7,10 +7,12 @@
  *
  */
 
+// Import Area
 #include <iostream>
 #include <sstream>
 
-const float Pi         {3.1415926535897}; // I conseidered this value for π.
+// Define the constants
+const float Pi         {3.1415926535897}; // I defined this value for π.
 const char Version[10] {"1.1.1"}; // Version's number.
 
 // Help message

@@ -11,12 +11,13 @@
  *
  */
 
-// Import Area
+// Import Area:
 #include <iostream>
 #include "lib.hpp"
 #include <string>
 #include <cmath>
 
+// Create the variable for shape calculation.
 float calculateValue;
 
 int main( int argc, char* argv[] ) {
@@ -33,7 +34,7 @@ int main( int argc, char* argv[] ) {
 		}
 
 
-		// shape calculators
+		// shape calculators:
 		else if (check == "rectangle") calculateValue = parseFloat(argv[2]) * parseFloat(argv[3]);
 		else if (check == "square") calculateValue = pow(parseFloat(argv[2]), 2);
 		else if (check == "triangle" || check == "diamond") calculateValue = (parseFloat(argv[2]) * parseFloat(argv[3])) / 2;
@@ -45,13 +46,13 @@ int main( int argc, char* argv[] ) {
 		else if (check == "parallelepiped") calculateValue = parseFloat(argv[2]) * parseFloat(argv[3]) * parseFloat(argv[4]);
 		else if (check == "semicircle") calculateValue = (pow(parseFloat(argv[2]), 2) * Pi) / circleParts(parseFloat(argv[3]));
 
-		// Show version and exit
+		// Show version and exit.
 		else if (check == "version") {
 			std::cout << "Version: " << Version << "\nProgram created by: Samuel de Oliveira\n";
 			return 0;
 		}
 
-		// If the command doesn't exist
+		// If the command doesn't exist.
 		else { 
 			std::cout << "You digit a invalid argument! Digit 'easarea help' for more info.\n";
 			return 0;
@@ -70,6 +71,6 @@ int main( int argc, char* argv[] ) {
 
 	}
 	
-	return 0;
+	return 0; // Exit.
 
 }
