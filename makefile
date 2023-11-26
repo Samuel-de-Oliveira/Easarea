@@ -9,7 +9,6 @@ all:
 	$(CXX) $(FILE) -o $(TARGET)
 
 install:
-	$(MAKE)
 	mv $(TARGET) $(BIN)
 
 uninstall:
